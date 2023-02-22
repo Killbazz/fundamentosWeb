@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
@@ -15,27 +16,67 @@
             <a href="contato.html">Contato</a>
         </li>
     </ul>
-    <h1>Entre em Contato Comigo</h1>
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-        <br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email">
-        <br><br>
-        <label for="Assunto">Escreva:</label><br>
-        <textarea type="Assunto" id="Assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
+    <h1 class="center">Entre em Contato Comigo</h1>
 
-        <h2>Endereço</h2>
-        <p>Paulista Avenue, 3693</p>
-        <p>São Paulo, SP</p>
+    <div class="container">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.60036936231!2d-46.69077088553874!3d-23.725961073575263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4f7317c1de7d%3A0x847b964e992d5277!2sR.%20Tib%C3%BArcio%20Rodrigues%2C%20200%20-%20Parque%20Colonial%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004821-160!5e0!3m2!1spt-BR!2sbr!4v1676575632980!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div> 
+           
+            <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome">
+            <br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email">
+            <br><br>
+            <label for="Assunto">Escreva:</label><br>
+            <textarea type="Assunto" id="Assunto" cols="60" rows="5"></textarea>
+            <br>
+            <br>
+            <button>Enviar</button>
+            </form>
         
-    </form>
+        </div>
+
+        <div class="ml-50">
+            
+            <p>Paulista Avenue, 3693</p>
+            <p>São Paulo, SP</p>
+    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.60036936231!2d-46.69077088553874!3d-23.725961073575263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4f7317c1de7d%3A0x847b964e992d5277!2sR.%20Tib%C3%BArcio%20Rodrigues%2C%20200%20-%20Parque%20Colonial%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004821-160!5e0!3m2!1spt-BR!2sbr!4v1676575632980!5m2!1spt-BR!2sbr" 
+            width="600" height="450" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+
+    <hr>
+    <footer>
+        <div class="container">
+
+            <a href="https://github.com/Killbazz" target="_blank">
+            <img class="tm-social p-30" src="assets/img/github.png" alt="logo Gitbub">
+            </a>
+
+            <a href="https://www.linkedin.com/in/marlon-bassoto-93b187261/" target="_blank">
+           <img class="tm-social p-30" src="assets/img/linkedin.png" alt="logo LinkedIn">
+            </a>
+            
+            <a href="https://docs.google.com/document/d/1MvXTuxZ4mkzBSAVBA4rqZbnuKtsMtwCNYpC0IIIZbG4/edit?usp=sharing" target="_blank">
+            <img class="tm-social p-30" src="assets/img/curriculos.png" alt="Meu Currículo">
+            </a>
+
+        </div>
+
+        <p class="center">Todos os Direitos Reservados por Marlon Bassoto &copy</p>
+    </footer>
+
+   
+
+       
+
+        
+    
     
 </body>
 </html>
