@@ -7,24 +7,36 @@
 }
 
 
-/*Estilos da Pagina contato.html
-*/
 
 
 /*Criar Flex Box*/
+body{
+  background-color: #f7aa02;
+}
+
 .container {
     display: flex;
     flex-flow:row;
     justify-content: center;
-    background-color: rgb(194, 203, 212);
+    background-color: #b0b0ae;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid black;
+  }
+
+  .container2{
+    display: flex;
+    flex-flow:row;
+    justify-content: center;
+    background-color: #f7aa02;
+    margin: 20px;
+    padding: 20px;
+    font-size: 22px;
+    border: 2px solid black;
+
   }
   
-  .flex-container > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
 
   #menu li{
     display:inline;
@@ -33,11 +45,13 @@
   }
   #menu li a{
     text-decoration: none;
-    color:black;
-    font-size: 20px;
+    color:rgb(17, 16, 16);
+    font-size: 30px;
+    opacity: 80%;
   }
   #menu li a:hover{
-    color:gray;                               
+    color:rgb(239, 73, 35);
+    opacity: 100%;                               
   }
   .p-30{
     padding: 30px;
@@ -56,6 +70,14 @@
   .mb-50{
     margin-bottom: 50px;
   }
-  .ml-50{
+  .ml-50,.form{
     margin-left: 50px;
+    width: 100%;
+    
   }
+  .camposform{
+    padding: 5%;
+
+  }
+
+  

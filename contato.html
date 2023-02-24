@@ -20,20 +20,29 @@
 
     <div class="container">
 
-        <div> 
+        <div class="form"> 
            
             <form>
+
+                <div class="camposform">
             <label for="nome">Nome:</label><br>
-            <input type="text" id="nome">
-            <br><br>
+            <input type="text" id="nome" onkeyup="validaNome()">
+            <div id="txtNome"></div>
+                </div>
+
+            <div class="camposform">  
             <label for="email">Email:</label><br>
-            <input type="email" id="email">
-            <br><br>
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
+            </div>
+
+            <div class="camposform">
             <label for="Assunto">Escreva:</label><br>
-            <textarea type="Assunto" id="Assunto" cols="60" rows="5"></textarea>
-            <br>
-            <br>
-            <button>Enviar</button>
+            <textarea type="Assunto" id="assunto" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
+            </div>
+            
+            <button onclick="enviar()">Enviar</button>
             </form>
         
         </div>
@@ -44,15 +53,16 @@
             <p>São Paulo, SP</p>
     
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.60036936231!2d-46.69077088553874!3d-23.725961073575263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4f7317c1de7d%3A0x847b964e992d5277!2sR.%20Tib%C3%BArcio%20Rodrigues%2C%20200%20-%20Parque%20Colonial%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004821-160!5e0!3m2!1spt-BR!2sbr!4v1676575632980!5m2!1spt-BR!2sbr" 
-            width="600" height="450" style="border:0;" 
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             width="450"
+             height="300"
+        
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapazoom()" onmouseout = "mapanormal()" id="mapa"></iframe>
         </div>
 
     </div>
-
     <hr>
     <footer>
-        <div class="container">
+        <div class="container2">
 
             <a href="https://github.com/Killbazz" target="_blank">
             <img class="tm-social p-30" src="assets/img/github.png" alt="logo Gitbub">
@@ -73,8 +83,7 @@
 
    
 
-       
-
+    <script src="assets/js/script.js"></script>
         
     
     
